@@ -36,10 +36,10 @@ The Vendor Management System (VMS) is designed to manage vendors and their purch
 
 3. **Install dependencies**:
     ```sh
-    pip install -r requirements.txt
+    pip install fastapi django psycopg2-binary uvicorn pydantic
     ```
 
-4. **Configure PostgreSQL**:
+4. **Configure Database (PostgreSQL or Other)**:
 
     Create a PostgreSQL database named `VMS` with user `postgres` and password `hello`.
 
@@ -69,9 +69,4 @@ The Vendor Management System (VMS) is designed to manage vendors and their purch
     http://127.0.0.1:8000/docs
     ```
 
-### Configuration
 
-Create a `.env` file in the root directory with the following content:
-
-```env
-DATABASE_URL=postgresql://postgres:hello@localhost/VMS
